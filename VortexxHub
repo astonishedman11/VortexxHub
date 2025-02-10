@@ -460,11 +460,12 @@ local function C_21()
 local script = G2L["21"];
 	local button = script.Parent
 	local sound = game:GetService("StarterGui"):FindFirstChild("SpookyMusic") or game:GetService("Workspace"):FindFirstChild("SpookyMusic")
-	
-	if not sound then
-		warn("SpookyMusic not found! Make sure the Sound is in StarterGui or Workspace.")
-		return
-	end
+	local sound1=Instance.new("Sound")
+	sound1.Name="SpookyMusic"
+	sound1.Volume=0.5
+	sound1.Looped=true
+	sound1.SoundId="rbxassetid://71019930863855"
+	sound1.Parent=game:GetService("StarterGui")
 	
 	button.MouseButton1Click:Connect(function()
 		if sound.IsPlaying then
@@ -484,11 +485,6 @@ local script = G2L["24"];
 	local button = script.Parent
 	local lighting = game:GetService("Lighting")
 	local sound = game.Workspace:FindFirstChild("DiscoMusic")
-	
-	if not sound then
-		warn("DiscoMusic not found in Workspace!")
-		return
-	end
 	
 	local isDiscoActive = false
 	
