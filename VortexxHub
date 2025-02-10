@@ -427,7 +427,9 @@ local script = G2L["1b"];
 	local button = script.Parent
 	local replicatedStorage = game:GetService("ReplicatedStorage")
 	local changeSkyEvent = replicatedStorage:FindFirstChild("ChangeSkyEvent")
-	
+	local rep=Instance.new("RemoteEvent")
+	rep.Parent=game.ReplicatedStorage
+	rep.Name="ChangeSkyEvent"
 	if changeSkyEvent then
 		button.MouseButton1Click:Connect(function()
 			changeSkyEvent:FireServer()  -- Tell the server to change the sky
