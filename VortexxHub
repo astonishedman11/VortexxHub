@@ -462,19 +462,13 @@ local script = G2L["21"];
 	local sound = game:GetService("StarterGui"):FindFirstChild("SpookyMusic") or game:GetService("Workspace"):FindFirstChild("SpookyMusic")
 	local sound1=Instance.new("Sound")
 	sound1.Name="SpookyMusic"
-	sound1.Volume=0.5
+	sound1.Volume=2
 	sound1.Looped=true
 	sound1.SoundId="rbxassetid://71019930863855"
 	sound1.Parent=game:GetService("StarterGui")
 	
 	button.MouseButton1Click:Connect(function()
-		if sound.IsPlaying then
-			sound:Stop()
-			button.Text = "Play Music"
-		else
-			sound:Play()
-			button.Text = "Stop Music"
-		end
+		sound1:Play()
 	end)
 	
 end;
