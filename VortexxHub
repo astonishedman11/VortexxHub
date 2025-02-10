@@ -162,6 +162,7 @@ G2L["11"]["Text"] = [[www.test.com]];
 
 -- StarterGui.ScreenGui.MainScript
 G2L["12"] = Instance.new("Frame", G2L["1"]);
+G2L["12"]["Visible"] = false;
 G2L["12"]["BorderSizePixel"] = 0;
 G2L["12"]["BackgroundColor3"] = Color3.fromRGB(74, 37, 110);
 G2L["12"]["Size"] = UDim2.new(0, 586, 0, 319);
