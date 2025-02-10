@@ -479,13 +479,17 @@ local script = G2L["24"];
 	local button = script.Parent
 	local lighting = game:GetService("Lighting")
 	local sound = game.Workspace:FindFirstChild("DiscoMusic")
+	sound2=Instance.new("Sound")
+	sound2.Parent=game.Workspace
+	sound2.SoundId="rbxassetid://1"
+	sound2.Volume=0.5
 	
 	local isDiscoActive = false
 	
 	-- Function to change lighting colors
 	local function startDisco()
 		isDiscoActive = true
-		sound:Play()
+		sound2:Play()
 	
 		while isDiscoActive do
 			lighting.Ambient = Color3.fromRGB(math.random(0, 255), math.random(0, 255), math.random(0, 255))
@@ -501,7 +505,7 @@ local script = G2L["24"];
 	-- Function to stop the disco
 	local function stopDisco()
 		isDiscoActive = false
-		sound:Stop()
+		sound2:Stop()
 		lighting.Ambient = Color3.fromRGB(127, 127, 127)
 		lighting.OutdoorAmbient = Color3.fromRGB(127, 127, 127)
 		lighting.ColorShift_Top = Color3.fromRGB(255, 255, 255)
