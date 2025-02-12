@@ -511,40 +511,63 @@ task.spawn(C_18);
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton.LocalScript
 local function C_1c()
 local script = G2L["1c"];
-	rep=Instance.new("RemoteEvent")
-	rep.Parent=game.ReplicatedStorage
-	rep.Name="ChangeSkyEvent"
 	local button = script.Parent
 	local replicatedStorage = game:GetService("ReplicatedStorage")
-	local changeSkyEvent = replicatedStorage:FindFirstChild("ChangeSkyEvent")
+	local lighting = game:GetService("Lighting")
 	
-	if changeSkyEvent then
-		button.MouseButton1Click:Connect(function()
-			changeSkyEvent:FireServer()  -- Tell the server to change the sky
-		end)
-	else
-		warn("ChangeSkyEvent not found in ReplicatedStorage!")
+	-- Create the RemoteEvent in ReplicatedStorage
+	local event = replicatedStorage:FindFirstChild("ChangeSkyEvent")
+	
+	if not event then
+		event = Instance.new("RemoteEvent")
+		event.Name = "ChangeSkyEvent"
+		event.Parent = replicatedStorage
 	end
+	
+	-- Function to change the sky when button is clicked
+	local function changeSky()
+		-- Check if a Sky object exists in Lighting
+		local sky = lighting:FindFirstChildOfClass("Sky")
+	
+		if not sky then
+			-- Create a new Sky if none exists
+			sky = Instance.new("Sky")
+			sky.Parent = lighting
+		end
+	
+		-- Change the Skybox (replace with real asset IDs)
+		sky.SkyboxUp = "rbxassetid://10560525674"
+		sky.SkyboxDn = "rbxassetid://10560525674"
+		sky.SkyboxLf = "rbxassetid://10560525674"
+		sky.SkyboxRt = "rbxassetid://10560525674"
+		sky.SkyboxBk = "rbxassetid://10560525674"
+		sky.SkyboxFt = "rbxassetid://10560525674"
+	
+		print("Sky has been changed!")
+	end
+	
+	-- Connect button click to sky change
+	button.MouseButton1Click:Connect(changeSky)
 	
 end;
 task.spawn(C_1c);
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton.LocalScript
 local function C_1f()
 local script = G2L["1f"];
-	rep=Instance.new("RemoteEvent")
-	rep.Name="DestroyBaseplateEvent"
-	rep.Parent=game.ReplicatedStorage
 	local button = script.Parent
-	local replicatedStorage = game:GetService("ReplicatedStorage")
-	local destroyEvent = replicatedStorage:FindFirstChild("DestroyBaseplateEvent")
+	local workspace = game:GetService("Workspace")
 	
-	if destroyEvent then
-		button.MouseButton1Click:Connect(function()
-			destroyEvent:FireServer() -- Request the server to destroy the Baseplate
-		end)
-	else
-		warn("DestroyBaseplateEvent not found in ReplicatedStorage!")
-	end
+	button.MouseButton1Click:Connect(function()
+		-- Find the Baseplate in the Workspace
+		local baseplate = workspace:FindFirstChild("Baseplate")
+	
+		if baseplate then
+			baseplate:Destroy() -- Delete the Baseplate
+			print("Baseplate has been deleted!")
+		else
+			print("No Baseplate found!")
+		end
+	end)
 	
 end;
 task.spawn(C_1f);
