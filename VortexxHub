@@ -21,7 +21,7 @@ G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(74, 37, 110);
 G2L["2"]["Size"] = UDim2.new(0, 502, 0, 252);
-G2L["2"]["Position"] = UDim2.new(0.41174, 0, 0.03477, 0);
+G2L["2"]["Position"] = UDim2.new(0.40304, 0, 0.05042, 0);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
@@ -81,7 +81,6 @@ G2L["9"] = Instance.new("LocalScript", G2L["7"]);
 
 -- StarterGui.ScreenGui.Frame.TextBox
 G2L["a"] = Instance.new("TextBox", G2L["2"]);
-G2L["a"]["CursorPosition"] = -1;
 G2L["a"]["BorderSizePixel"] = 0;
 G2L["a"]["TextSize"] = 14;
 G2L["a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
@@ -553,9 +552,10 @@ local script = G2L["19"];
 	local button = script.Parent
 	local screenGui = script.Parent.Parent
 	
-	local targetFrame = screenGui:FindFirstChild("Frame") -- Change this to the Frame you want to show
+	local targetFrame = screenGui:FindFirstChild("Frame")
+	local targetFrame1 = screenGui:FindFirstChild("34")-- Change this to the Frame you want to show
 	
-	if not targetFrame then
+	if not targetFrame and targetFrame1 then
 		warn("Target frame not found!")
 		return
 	end
@@ -569,7 +569,8 @@ local script = G2L["19"];
 		end
 	
 		-- Show the target frame
-		targetFrame.Visible = true
+		targetFrame.Visible= true
+		targetFrame1.Visible=true
 	end)
 	
 end;
@@ -745,9 +746,10 @@ local script = G2L["2b"];
 	local button = script.Parent
 	local screenGui = script.Parent.Parent
 	
-	local targetFrame = screenGui:FindFirstChild("2Frame") -- Change this to the Frame you want to show
+	local targetFrame = screenGui:FindFirstChild("2Frame") 
+	local targetFrame2= screenGui:FindFirstChild("34") -- Change this to the Frame you want to show
 	
-	if not targetFrame then
+	if not targetFrame and targetFrame2 then
 		warn("Target frame not found!")
 		return
 	end
@@ -762,6 +764,7 @@ local script = G2L["2b"];
 	
 		-- Show the target frame
 		targetFrame.Visible = true
+		targetFrame2.Visible=true
 	end)
 	
 end;
