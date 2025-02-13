@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 46 | Scripts: 10 | Modules: 0 | Tags: 0
+-- Instances: 52 | Scripts: 10 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -21,7 +21,7 @@ G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(74, 37, 110);
 G2L["2"]["Size"] = UDim2.new(0, 502, 0, 252);
-G2L["2"]["Position"] = UDim2.new(0.51615, 0, -0.01565, 0);
+G2L["2"]["Position"] = UDim2.new(0.41174, 0, 0.03477, 0);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
@@ -37,7 +37,7 @@ G2L["3"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["3"]["BackgroundTransparency"] = 0.9;
 G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3"]["Text"] = [[GET KEY]];
-G2L["3"]["Position"] = UDim2.new(0.03785, 0, 0.68651, 0);
+G2L["3"]["Position"] = UDim2.new(0.14741, 0, 0.68651, 0);
 
 
 -- StarterGui.ScreenGui.Frame.TextButton.UICorner
@@ -66,7 +66,7 @@ G2L["7"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["7"]["BackgroundTransparency"] = 0.9;
 G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7"]["Text"] = [[ACTIVE]];
-G2L["7"]["Position"] = UDim2.new(0.53586, 0, 0.68651, 0);
+G2L["7"]["Position"] = UDim2.new(0.56175, 0, 0.68651, 0);
 
 
 -- StarterGui.ScreenGui.Frame.TextButton.UICorner
@@ -81,13 +81,14 @@ G2L["9"] = Instance.new("LocalScript", G2L["7"]);
 
 -- StarterGui.ScreenGui.Frame.TextBox
 G2L["a"] = Instance.new("TextBox", G2L["2"]);
+G2L["a"]["CursorPosition"] = -1;
 G2L["a"]["BorderSizePixel"] = 0;
 G2L["a"]["TextSize"] = 14;
 G2L["a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a"]["Size"] = UDim2.new(0, 458, 0, 50);
-G2L["a"]["Position"] = UDim2.new(0.03785, 0, 0.33333, 0);
+G2L["a"]["Size"] = UDim2.new(0, 394, 0, 50);
+G2L["a"]["Position"] = UDim2.new(0.1494, 0, 0.3254, 0);
 G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["a"]["Text"] = [[]];
 
@@ -109,6 +110,7 @@ G2L["c"]["BackgroundTransparency"] = 1;
 G2L["c"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["c"]["Text"] = [[Insert Key...]];
+G2L["c"]["Position"] = UDim2.new(-0.02154, 0, 0, 0);
 
 
 -- StarterGui.ScreenGui.Frame.TextBox.TextLabel.UICorner
@@ -116,281 +118,278 @@ G2L["d"] = Instance.new("UICorner", G2L["c"]);
 
 
 
--- StarterGui.ScreenGui.Frame.TextLabel
-G2L["e"] = Instance.new("TextLabel", G2L["2"]);
-G2L["e"]["BorderSizePixel"] = 0;
-G2L["e"]["TextSize"] = 32;
-G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e"]["BackgroundTransparency"] = 1;
-G2L["e"]["Size"] = UDim2.new(0, 200, 0, 50);
-G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e"]["Text"] = [[-- Vortexx Hub ]];
-G2L["e"]["Position"] = UDim2.new(0.03785, 0, 0.05159, 0);
-
-
 -- StarterGui.ScreenGui.Frame.LocalScript
-G2L["f"] = Instance.new("LocalScript", G2L["2"]);
+G2L["e"] = Instance.new("LocalScript", G2L["2"]);
 
 
 
--- StarterGui.ScreenGui.Bitt
-G2L["10"] = Instance.new("Frame", G2L["1"]);
-G2L["10"]["Visible"] = false;
-G2L["10"]["BorderSizePixel"] = 0;
-G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10"]["Size"] = UDim2.new(0, 502, 0, 47);
-G2L["10"]["Position"] = UDim2.new(0.20606, 0, 0.03129, 0);
-G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10"]["Name"] = [[Bitt]];
-G2L["10"]["BackgroundTransparency"] = 0.9;
+-- StarterGui.ScreenGui.Frame.32\
+G2L["f"] = Instance.new("Frame", G2L["2"]);
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(48, 24, 71);
+G2L["f"]["Size"] = UDim2.new(0, 64, 0, 252);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Name"] = [[32\]];
 
 
--- StarterGui.ScreenGui.Bitt.TextLabel
-G2L["11"] = Instance.new("TextLabel", G2L["10"]);
+-- StarterGui.ScreenGui.Frame.32\.UICorner
+G2L["10"] = Instance.new("UICorner", G2L["f"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.32\.TextLabel
+G2L["11"] = Instance.new("TextLabel", G2L["f"]);
 G2L["11"]["BorderSizePixel"] = 0;
 G2L["11"]["TextSize"] = 32;
 G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["BackgroundTransparency"] = 0.9;
-G2L["11"]["Size"] = UDim2.new(0, 502, 0, 50);
+G2L["11"]["BackgroundTransparency"] = 1;
+G2L["11"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11"]["Text"] = [[www.test.com]];
+G2L["11"]["Text"] = [[Vortexx Hub ]];
+G2L["11"]["Rotation"] = 90;
+G2L["11"]["Position"] = UDim2.new(-0.99122, 0, 0.40079, 0);
 
 
--- StarterGui.ScreenGui.MainScript
-G2L["12"] = Instance.new("Frame", G2L["1"]);
-G2L["12"]["Visible"] = false;
+-- StarterGui.ScreenGui.Frame.TextLabel
+G2L["12"] = Instance.new("TextLabel", G2L["2"]);
+G2L["12"]["TextWrapped"] = true;
 G2L["12"]["BorderSizePixel"] = 0;
-G2L["12"]["BackgroundColor3"] = Color3.fromRGB(74, 37, 110);
-G2L["12"]["Size"] = UDim2.new(0, 586, 0, 319);
-G2L["12"]["Position"] = UDim2.new(0.01639, 0, 0.08171, 0);
+G2L["12"]["TextSize"] = 32;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["BackgroundTransparency"] = 1;
+G2L["12"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Name"] = [[MainScript]];
+G2L["12"]["Text"] = [[ Key System]];
+G2L["12"]["Position"] = UDim2.new(0.14741, 0, 0.03968, 0);
 
 
--- StarterGui.ScreenGui.MainScript.UICorner
-G2L["13"] = Instance.new("UICorner", G2L["12"]);
+-- StarterGui.ScreenGui.Bitt
+G2L["13"] = Instance.new("Frame", G2L["1"]);
+G2L["13"]["Visible"] = false;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["Size"] = UDim2.new(0, 502, 0, 47);
+G2L["13"]["Position"] = UDim2.new(0.20606, 0, 0.03129, 0);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Name"] = [[Bitt]];
+G2L["13"]["BackgroundTransparency"] = 0.9;
 
 
-
--- StarterGui.ScreenGui.MainScript.TextLabel
-G2L["14"] = Instance.new("TextLabel", G2L["12"]);
+-- StarterGui.ScreenGui.Bitt.TextLabel
+G2L["14"] = Instance.new("TextLabel", G2L["13"]);
 G2L["14"]["BorderSizePixel"] = 0;
 G2L["14"]["TextSize"] = 32;
 G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14"]["BackgroundTransparency"] = 1;
-G2L["14"]["Size"] = UDim2.new(0, 247, 0, 50);
+G2L["14"]["BackgroundTransparency"] = 0.9;
+G2L["14"]["Size"] = UDim2.new(0, 502, 0, 50);
 G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14"]["Text"] = [[-- Vortexx Hub]];
+G2L["14"]["Text"] = [[www.test.com]];
 
 
--- StarterGui.ScreenGui.MainScript.TextLabel.UICorner
-G2L["15"] = Instance.new("UICorner", G2L["14"]);
+-- StarterGui.ScreenGui.MainScript
+G2L["15"] = Instance.new("Frame", G2L["1"]);
+G2L["15"]["Visible"] = false;
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(74, 37, 110);
+G2L["15"]["Size"] = UDim2.new(0, 586, 0, 319);
+G2L["15"]["Position"] = UDim2.new(0.01639, 0, 0.08171, 0);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Name"] = [[MainScript]];
+
+
+-- StarterGui.ScreenGui.MainScript.UICorner
+G2L["16"] = Instance.new("UICorner", G2L["15"]);
 
 
 
 -- StarterGui.ScreenGui.MainScript.TextButton
-G2L["16"] = Instance.new("TextButton", G2L["12"]);
-G2L["16"]["BorderSizePixel"] = 0;
-G2L["16"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16"]["TextSize"] = 23;
-G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["16"]["Size"] = UDim2.new(0, 163, 0, 36);
-G2L["16"]["BackgroundTransparency"] = 0.8;
-G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16"]["Text"] = [[Main]];
-G2L["16"]["Position"] = UDim2.new(0, 0, 0.31975, 0);
+G2L["17"] = Instance.new("TextButton", G2L["15"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["TextSize"] = 23;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17"]["Size"] = UDim2.new(0, 138, 0, 36);
+G2L["17"]["BackgroundTransparency"] = 0.8;
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[Main]];
+G2L["17"]["Position"] = UDim2.new(0.157, 0, 0.33856, 0);
 
 
 -- StarterGui.ScreenGui.MainScript.TextButton.UICorner
-G2L["17"] = Instance.new("UICorner", G2L["16"]);
+G2L["18"] = Instance.new("UICorner", G2L["17"]);
 
 
 
 -- StarterGui.ScreenGui.MainScript.TextButton.LocalScript
-G2L["18"] = Instance.new("LocalScript", G2L["16"]);
+G2L["19"] = Instance.new("LocalScript", G2L["17"]);
 
 
 
 -- StarterGui.ScreenGui.MainScript.Frame
-G2L["19"] = Instance.new("Frame", G2L["12"]);
-G2L["19"]["Visible"] = false;
-G2L["19"]["BorderSizePixel"] = 0;
-G2L["19"]["BackgroundColor3"] = Color3.fromRGB(49, 25, 73);
-G2L["19"]["Size"] = UDim2.new(0, 394, 0, 244);
-G2L["19"]["Position"] = UDim2.new(0.29181, 0, 0.16614, 0);
-G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-
-
--- StarterGui.ScreenGui.MainScript.Frame.TextButton
-G2L["1a"] = Instance.new("TextButton", G2L["19"]);
+G2L["1a"] = Instance.new("Frame", G2L["15"]);
+G2L["1a"]["Visible"] = false;
 G2L["1a"]["BorderSizePixel"] = 0;
-G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a"]["TextSize"] = 14;
-G2L["1a"]["TextDirection"] = Enum.TextDirection.LeftToRight;
-G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1a"]["Size"] = UDim2.new(0, 382, 0, 43);
-G2L["1a"]["BackgroundTransparency"] = 0.7;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(49, 25, 73);
+G2L["1a"]["Size"] = UDim2.new(0, 334, 0, 244);
+G2L["1a"]["Position"] = UDim2.new(0.39404, 0, 0.16614, 0);
 G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a"]["Text"] = [[SkyBox]];
-G2L["1a"]["Position"] = UDim2.new(0.01523, 0, 0.02869, 0);
+
+
+-- StarterGui.ScreenGui.MainScript.Frame.TextButton
+G2L["1b"] = Instance.new("TextButton", G2L["1a"]);
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["TextSize"] = 14;
+G2L["1b"]["TextDirection"] = Enum.TextDirection.LeftToRight;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b"]["Size"] = UDim2.new(0, 328, 0, 43);
+G2L["1b"]["BackgroundTransparency"] = 0.7;
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Text"] = [[SkyBox]];
+G2L["1b"]["Position"] = UDim2.new(0.01523, 0, 0.02869, 0);
 
 
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton.UICorner
-G2L["1b"] = Instance.new("UICorner", G2L["1a"]);
+G2L["1c"] = Instance.new("UICorner", G2L["1b"]);
 
 
 
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton.LocalScript
-G2L["1c"] = Instance.new("LocalScript", G2L["1a"]);
+G2L["1d"] = Instance.new("LocalScript", G2L["1b"]);
 
 
 
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton
-G2L["1d"] = Instance.new("TextButton", G2L["19"]);
-G2L["1d"]["BorderSizePixel"] = 0;
-G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d"]["TextSize"] = 14;
-G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1d"]["Size"] = UDim2.new(0, 382, 0, 50);
-G2L["1d"]["BackgroundTransparency"] = 0.7;
-G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d"]["Text"] = [[Delete Baseplate]];
-G2L["1d"]["Position"] = UDim2.new(0.01523, 0, 0.23361, 0);
+G2L["1e"] = Instance.new("TextButton", G2L["1a"]);
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["TextSize"] = 14;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e"]["Size"] = UDim2.new(0, 328, 0, 50);
+G2L["1e"]["BackgroundTransparency"] = 0.7;
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Text"] = [[Delete Baseplate]];
+G2L["1e"]["Position"] = UDim2.new(0.01523, 0, 0.23361, 0);
 
 
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton.UICorner
-G2L["1e"] = Instance.new("UICorner", G2L["1d"]);
+G2L["1f"] = Instance.new("UICorner", G2L["1e"]);
 
 
 
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton.LocalScript
-G2L["1f"] = Instance.new("LocalScript", G2L["1d"]);
+G2L["20"] = Instance.new("LocalScript", G2L["1e"]);
 
 
 
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton
-G2L["20"] = Instance.new("TextButton", G2L["19"]);
-G2L["20"]["BorderSizePixel"] = 0;
-G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["20"]["TextSize"] = 14;
-G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["20"]["Size"] = UDim2.new(0, 382, 0, 50);
-G2L["20"]["BackgroundTransparency"] = 0.7;
-G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["20"]["Text"] = [[Music]];
-G2L["20"]["Position"] = UDim2.new(0.01523, 0, 0.48361, 0);
+G2L["21"] = Instance.new("TextButton", G2L["1a"]);
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["TextSize"] = 14;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21"]["Size"] = UDim2.new(0, 328, 0, 50);
+G2L["21"]["BackgroundTransparency"] = 0.7;
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Text"] = [[Music]];
+G2L["21"]["Position"] = UDim2.new(0.01523, 0, 0.48361, 0);
 
 
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton.UICorner
-G2L["21"] = Instance.new("UICorner", G2L["20"]);
+G2L["22"] = Instance.new("UICorner", G2L["21"]);
 
 
 
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton.LocalScript
-G2L["22"] = Instance.new("LocalScript", G2L["20"]);
+G2L["23"] = Instance.new("LocalScript", G2L["21"]);
 
 
 
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton
-G2L["23"] = Instance.new("TextButton", G2L["19"]);
-G2L["23"]["BorderSizePixel"] = 0;
-G2L["23"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["23"]["TextSize"] = 14;
-G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["23"]["Size"] = UDim2.new(0, 382, 0, 50);
-G2L["23"]["BackgroundTransparency"] = 0.7;
-G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["23"]["Text"] = [[Disco]];
-G2L["23"]["Position"] = UDim2.new(0.01271, 0, 0.74149, 0);
+G2L["24"] = Instance.new("TextButton", G2L["1a"]);
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["TextSize"] = 14;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["24"]["Size"] = UDim2.new(0, 328, 0, 50);
+G2L["24"]["BackgroundTransparency"] = 0.7;
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Text"] = [[Disco]];
+G2L["24"]["Position"] = UDim2.new(0.01271, 0, 0.74149, 0);
 
 
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton.UICorner
-G2L["24"] = Instance.new("UICorner", G2L["23"]);
+G2L["25"] = Instance.new("UICorner", G2L["24"]);
 
 
 
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton.LocalScript
-G2L["25"] = Instance.new("LocalScript", G2L["23"]);
+G2L["26"] = Instance.new("LocalScript", G2L["24"]);
 
 
 
 -- StarterGui.ScreenGui.MainScript.Frame.UICorner
-G2L["26"] = Instance.new("UICorner", G2L["19"]);
+G2L["27"] = Instance.new("UICorner", G2L["1a"]);
 
 
 
 -- StarterGui.ScreenGui.MainScript.LocalScript
-G2L["27"] = Instance.new("LocalScript", G2L["12"]);
+G2L["28"] = Instance.new("LocalScript", G2L["15"]);
 
 
 
 -- StarterGui.ScreenGui.MainScript.TextButton
-G2L["28"] = Instance.new("TextButton", G2L["12"]);
-G2L["28"]["BorderSizePixel"] = 0;
-G2L["28"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28"]["TextSize"] = 23;
-G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["28"]["Size"] = UDim2.new(0, 163, 0, 36);
-G2L["28"]["BackgroundTransparency"] = 0.8;
-G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28"]["Text"] = [[Home]];
-G2L["28"]["Position"] = UDim2.new(0, 0, 0.19436, 0);
+G2L["29"] = Instance.new("TextButton", G2L["15"]);
+G2L["29"]["BorderSizePixel"] = 0;
+G2L["29"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["TextSize"] = 23;
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["29"]["Size"] = UDim2.new(0, 138, 0, 36);
+G2L["29"]["BackgroundTransparency"] = 0.8;
+G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["Text"] = [[Home]];
+G2L["29"]["Position"] = UDim2.new(0.157, 0, 0.19749, 0);
 
 
 -- StarterGui.ScreenGui.MainScript.TextButton.UICorner
-G2L["29"] = Instance.new("UICorner", G2L["28"]);
+G2L["2a"] = Instance.new("UICorner", G2L["29"]);
 
 
 
 -- StarterGui.ScreenGui.MainScript.TextButton.LocalScript
-G2L["2a"] = Instance.new("LocalScript", G2L["28"]);
+G2L["2b"] = Instance.new("LocalScript", G2L["29"]);
 
 
 
 -- StarterGui.ScreenGui.MainScript.2Frame
-G2L["2b"] = Instance.new("Frame", G2L["12"]);
-G2L["2b"]["BorderSizePixel"] = 0;
-G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(49, 25, 73);
-G2L["2b"]["Size"] = UDim2.new(0, 394, 0, 244);
-G2L["2b"]["Position"] = UDim2.new(0.28995, 0, 0.16445, 0);
-G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b"]["Name"] = [[2Frame]];
+G2L["2c"] = Instance.new("Frame", G2L["15"]);
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(49, 25, 73);
+G2L["2c"]["Size"] = UDim2.new(0, 333, 0, 244);
+G2L["2c"]["Position"] = UDim2.new(0.39404, 0, 0.16445, 0);
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Name"] = [[2Frame]];
 
 
 -- StarterGui.ScreenGui.MainScript.2Frame.UICorner
-G2L["2c"] = Instance.new("UICorner", G2L["2b"]);
+G2L["2d"] = Instance.new("UICorner", G2L["2c"]);
 
 
 
 -- StarterGui.ScreenGui.MainScript.2Frame.TextLabel
-G2L["2d"] = Instance.new("TextLabel", G2L["2b"]);
-G2L["2d"]["BorderSizePixel"] = 0;
-G2L["2d"]["TextSize"] = 10;
-G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d"]["BackgroundTransparency"] = 1;
-G2L["2d"]["RichText"] = true;
-G2L["2d"]["Size"] = UDim2.new(0, 200, 0, 70);
-G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["Text"] = [[Note:I'm an single developer. Please know that this script will rarely get updates.]];
-G2L["2d"]["Position"] = UDim2.new(0.24873, 0, 0.78091, 0);
-
-
--- StarterGui.ScreenGui.MainScript.2Frame.TextLabel
-G2L["2e"] = Instance.new("TextLabel", G2L["2b"]);
+G2L["2e"] = Instance.new("TextLabel", G2L["2c"]);
 G2L["2e"]["BorderSizePixel"] = 0;
 G2L["2e"]["TextSize"] = 32;
 G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -403,6 +402,73 @@ G2L["2e"]["Text"] = [[Vortexx Hub
 by
 fzgak104049DIO]];
 G2L["2e"]["Position"] = UDim2.new(0.24619, 0, 0.05738, 0);
+
+
+-- StarterGui.ScreenGui.MainScript.2Frame.TextLabel
+G2L["2f"] = Instance.new("TextLabel", G2L["2c"]);
+G2L["2f"]["BorderSizePixel"] = 0;
+G2L["2f"]["TextSize"] = 10;
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["BackgroundTransparency"] = 1;
+G2L["2f"]["RichText"] = true;
+G2L["2f"]["Size"] = UDim2.new(0, 199, 0, 70);
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["Text"] = [[10.02.25]];
+G2L["2f"]["Position"] = UDim2.new(0.2217, 0, 0.8055, 0);
+
+
+-- StarterGui.ScreenGui.MainScript.34
+G2L["30"] = Instance.new("Frame", G2L["15"]);
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(48, 24, 71);
+G2L["30"]["Size"] = UDim2.new(0, 81, 0, 319);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Name"] = [[34]];
+
+
+-- StarterGui.ScreenGui.MainScript.34.UICorner
+G2L["31"] = Instance.new("UICorner", G2L["30"]);
+
+
+
+-- StarterGui.ScreenGui.MainScript.34.TextLabel
+G2L["32"] = Instance.new("TextLabel", G2L["30"]);
+G2L["32"]["TextWrapped"] = true;
+G2L["32"]["BorderSizePixel"] = 0;
+G2L["32"]["TextSize"] = 32;
+G2L["32"]["TextScaled"] = true;
+G2L["32"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["32"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["32"]["BackgroundTransparency"] = 1;
+G2L["32"]["Size"] = UDim2.new(0, 247, 0, 50);
+G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["Text"] = [[Vortexx Hub]];
+G2L["32"]["Rotation"] = 90;
+G2L["32"]["Position"] = UDim2.new(-1.02678, 0, 0.41066, 0);
+
+
+-- StarterGui.ScreenGui.MainScript.34.TextLabel.UICorner
+G2L["33"] = Instance.new("UICorner", G2L["32"]);
+
+
+
+-- StarterGui.ScreenGui.MainScript.TextLabel
+G2L["34"] = Instance.new("TextLabel", G2L["15"]);
+G2L["34"]["TextWrapped"] = true;
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["TextScaled"] = true;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["34"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["BackgroundTransparency"] = 1;
+G2L["34"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Text"] = [[Main Hub]];
+G2L["34"]["Position"] = UDim2.new(0.157, 0, 0, 0);
 
 
 -- StarterGui.ScreenGui.Frame.TextButton.LocalScript
@@ -449,8 +515,8 @@ local script = G2L["9"];
 end;
 task.spawn(C_9);
 -- StarterGui.ScreenGui.Frame.LocalScript
-local function C_f()
-local script = G2L["f"];
+local function C_e()
+local script = G2L["e"];
 	local gui = script.Parent
 	local dragging = false
 	local dragInput, mousePos, guiPos
@@ -480,10 +546,10 @@ local script = G2L["f"];
 	end)
 	
 end;
-task.spawn(C_f);
+task.spawn(C_e);
 -- StarterGui.ScreenGui.MainScript.TextButton.LocalScript
-local function C_18()
-local script = G2L["18"];
+local function C_19()
+local script = G2L["19"];
 	local button = script.Parent
 	local screenGui = script.Parent.Parent
 	
@@ -507,10 +573,10 @@ local script = G2L["18"];
 	end)
 	
 end;
-task.spawn(C_18);
+task.spawn(C_19);
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton.LocalScript
-local function C_1c()
-local script = G2L["1c"];
+local function C_1d()
+local script = G2L["1d"];
 	local button = script.Parent
 	local replicatedStorage = game:GetService("ReplicatedStorage")
 	local lighting = game:GetService("Lighting")
@@ -550,10 +616,10 @@ local script = G2L["1c"];
 	button.MouseButton1Click:Connect(changeSky)
 	
 end;
-task.spawn(C_1c);
+task.spawn(C_1d);
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton.LocalScript
-local function C_1f()
-local script = G2L["1f"];
+local function C_20()
+local script = G2L["20"];
 	local button = script.Parent
 	local workspace = game:GetService("Workspace")
 	
@@ -570,10 +636,10 @@ local script = G2L["1f"];
 	end)
 	
 end;
-task.spawn(C_1f);
+task.spawn(C_20);
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton.LocalScript
-local function C_22()
-local script = G2L["22"];
+local function C_23()
+local script = G2L["23"];
 	local button = script.Parent
 	local sound = game:GetService("StarterGui"):FindFirstChild("SpookyMusic") or game:GetService("Workspace"):FindFirstChild("SpookyMusic")
 	local sound1=Instance.new("Sound")
@@ -588,10 +654,10 @@ local script = G2L["22"];
 	end)
 	
 end;
-task.spawn(C_22);
+task.spawn(C_23);
 -- StarterGui.ScreenGui.MainScript.Frame.TextButton.LocalScript
-local function C_25()
-local script = G2L["25"];
+local function C_26()
+local script = G2L["26"];
 	local button = script.Parent
 	local lighting = game:GetService("Lighting")
 	local sound = game.Workspace:FindFirstChild("DiscoMusic")
@@ -639,10 +705,10 @@ local script = G2L["25"];
 	end)
 	
 end;
-task.spawn(C_25);
+task.spawn(C_26);
 -- StarterGui.ScreenGui.MainScript.LocalScript
-local function C_27()
-local script = G2L["27"];
+local function C_28()
+local script = G2L["28"];
 	local gui = script.Parent
 	local dragging = false
 	local dragInput, mousePos, guiPos
@@ -672,10 +738,10 @@ local script = G2L["27"];
 	end)
 	
 end;
-task.spawn(C_27);
+task.spawn(C_28);
 -- StarterGui.ScreenGui.MainScript.TextButton.LocalScript
-local function C_2a()
-local script = G2L["2a"];
+local function C_2b()
+local script = G2L["2b"];
 	local button = script.Parent
 	local screenGui = script.Parent.Parent
 	
@@ -699,6 +765,6 @@ local script = G2L["2a"];
 	end)
 	
 end;
-task.spawn(C_2a);
+task.spawn(C_2b);
 
 return G2L["1"], require;
